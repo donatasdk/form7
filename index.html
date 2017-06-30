@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="container">
+    <form action="/action_page.php" method="post">
+        <table>
+            <tr>
+                <td class="names">Title</td>
+                <td>
+                    <input list="titles" name="title" placeholder="Select one or enter your own" SIZE="25">
+                    <datalist id="titles">
+                        <option value="Mr">
+                        <option value="Mrs">
+                        <option value="Ms">
+                        <option value="Miss">
+                        <option value="Lord">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td class="names">Name</td>
+                <td><input type="text" name="name" placeholder="John Doe" size="25"></td>
+            </tr>
+            <tr>
+                <td class="names">Phone number</td>
+                <td><input type="tel" name="telephone" placeholder="+1 23456789" size="25">(optional)</td>
+            </tr>
+            <tr>
+                <td class="names">Email Address</td>
+                <td><input type="email" name="email" value="add@sdqqd" size="25"></td>
+            </tr>
+            <tr>
+                <td class="names">Your Website</td>
+                <td><input type="url" name="website" placeholder="www.yoursite.com" size="25">(optional)</td>
+            </tr>
+            <tr>
+                <td class="names">Nr. of items to order</td>
+                <td><input type="number" name="quantity" min="0" max="10" step="1" value="6">(1-10)</td>
+            </tr>
+        </table>
+        <P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1"></P>
+    </form>
+
+
+</div>
+<div id="container2">
+
+</div>
+
+</body>
+</html>
