@@ -7,13 +7,13 @@ body{
 
 #container{
     width: 800px;
-    height: 500px;
+    height: auto;
     background-color: lightgray;
     margin: 20px auto;
     border-radius: 10px;
 }
 table{
-    width: 70%;
+    padding-top: 20px;
     margin: auto;
 }
 
@@ -29,4 +29,8 @@ table{
     text-align: right;
     font-weight: bold;
 
+}
+#submitbtn{border;
+    text-decoration: none;
+    cursor: pointer;
 }

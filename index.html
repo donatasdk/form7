@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td class="names">Phone number</td>
-                <td><input type="tel" name="telephone" placeholder="+1 23456789" size="25">(optional)</td>
+                <td><input type="tel" name="telephone" placeholder="+1 23456789" size="25"> (optional)</td>
             </tr>
             <tr>
                 <td class="names">Email Address</td>
@@ -36,20 +36,44 @@
             </tr>
             <tr>
                 <td class="names">Your Website</td>
-                <td><input type="url" name="website" placeholder="www.yoursite.com" size="25">(optional)</td>
+                <td><input type="url" name="website" placeholder="www.yoursite.com" size="25"> (optional)</td>
             </tr>
             <tr>
                 <td class="names">Nr. of items to order</td>
-                <td><input type="number" name="quantity" min="0" max="10" step="1" value="6">(1-10)</td>
+                <td><input type="number" name="quantity" min="0" max="10" step="1" value="6"> (1-10)</td>
+            </tr>
+            <tr>
+                <td class="names">Lenght</td>
+                <td><input type="range" name="points" min="0" max="10"> 1m (in 10cm increments)</td>
+            </tr>
+            <tr>
+                <td class="names">Delivery Date</td>
+                <td><input type="date" name="date" min="2010-12-16"> (minimum 16 December 2010)</td>
+            </tr>
+            <tr>
+                <td class="names">Time of delivery</td>
+                <td><input type="time" name="time" step="1800"> (in 30 min increments)</td>
+            </tr>
+            <tr>
+                <td class="names">Color of the item</td>
+                <td><input type="color" name="color" value="#ed1c24"> (default red)</td>
             </tr>
         </table>
-        <P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1"></P>
+        <p><input type="submit" value="Submit" name="submit" id="submitbtn"></p>
     </form>
 
 
 </div>
 <div id="container2">
+    <table>
+        <tr>
+            <form action="/action_page.php">
+                <td class="names">Search</td>
+                <td><input type="search" name="search"><input type="submit" value="Go" id="searchbtn"></td>
 
+            </form>
+        </tr>
+    </table>
 </div>
 
 </body>
